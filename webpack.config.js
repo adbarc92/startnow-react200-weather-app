@@ -3,9 +3,13 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, '/src'),
 
+  devtool: 'cheap-source-map',
+
   entry: {
     javascript: './js/index'
   },
+
+  mode: 'development',
 
   output: {
     filename: 'bundle.js',
