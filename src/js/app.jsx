@@ -17,11 +17,11 @@ export default class App extends Component {
           </div>
         </div>
         <div>
-          <div className='row'>
-            <div className='col-12 col-md-6 mb4'>
+          <div className='row mt-3 mb-3'>
+            <div className='col-12 col-md-6 mb-3 pl-0'>
               <City />
             </div>
-            <div className='col-12 col-md-6 mb4'>
+            <div className='col-12 col-md-6 mb-3 pr-0'>
               <History />
             </div>
           </div>

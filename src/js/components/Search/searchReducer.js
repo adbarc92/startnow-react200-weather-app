@@ -14,8 +14,9 @@ const defaultState = {
 
 export default function SearchReducer(state = defaultState, action) {
   const { type, payload } = action;
+
   switch (type) {
-    case 'GET_WEATHER': {
+    case 'GET_WEATHER_FULFILLED': {
       return {
         ...state,
         city: payload.data.name,
@@ -24,8 +25,8 @@ export default function SearchReducer(state = defaultState, action) {
         temp: payload.data.main.temp,
         pressure: payload.data.main.pressure,
         humidity: payload.data.main.humidity,
-        lowestTemp: payload.data.main.lowestTemp,
-        highestTemp: payload.data.main.highestTemp,
+        lowestTemp: payload.data.main.temp_min,
+        highestTemp: payload.data.main.temp_max,
         wind: payload.data.wind.speed,
         history: [
           ...state.history,
