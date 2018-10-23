@@ -4,6 +4,7 @@
   "description": "Base application setup for creating a new react project.",
   "main": "server/index.js",
   "scripts": {
+    "bw": "npm run build && npm run watch",
     "build": "npm run less && webpack -w --mode development",
     "watch": "webpack --watch",
     "start": "node server/index.js",
