@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import 
+import SearchReducer from './components/Search/searchReducer';
 
 const rootReducer = combineReducers({
-  // add reducers
+  search: SearchReducer
 });
 
 export default rootReducer;

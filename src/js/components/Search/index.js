@@ -1,4 +1,10 @@
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Search from './search';
 
-export default Search;
+function mapStoreToProps(store) {
+  return {
+    searchTarget: store.search.searchTarget
+  };
+}
+
+export default connect(mapStoreToProps)(Search);

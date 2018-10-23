@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import City from './components/CityInformation';
+import City from './components/City';
 import Search from './components/Search';
 import History from './components/History';
 
